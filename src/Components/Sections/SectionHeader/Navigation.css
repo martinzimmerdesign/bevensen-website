@@ -1,0 +1,141 @@
+.navigation_parent {
+  position: sticky;
+  height: auto;
+  width: 100%;
+  background-color: #EDEFF7;
+  z-index: 400;
+}
+
+.navigation_inner_parent {
+  width: auto;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.navigation_parent li {
+  display: inline-block;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 30px 10px;
+}
+
+.navigation_parent li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+  padding: 2px 0px;
+  border-bottom: 1.5px solid rgba(0,0,0,0);
+}
+
+.navigation_parent li a:hover {
+  border-bottom: 1.5px solid #D74444;
+  color: #3E3E3E;
+}
+
+.nav_name {
+  display: none;
+}
+
+/* Mobile Navigation Start */
+@media only screen and (max-width: 720px) {
+
+  .navigation_parent {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #EEF0F8, #FFFFFF);
+  }
+
+  .navigation_inner_parent {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .navigation_parent li {
+    display: block;
+    padding: 12px 10px;
+  }
+
+  .navigation_parent li a {
+    font-size: 1.2em;
+  }
+
+/* Mobile Navigation Toggle Button Start */
+/* Nur für Mobile Version relevant */
+
+  .nav_mobile_button_parent {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: block;
+    border: 2px solid white;
+    width: 110px;
+    padding: 15px;
+    z-index: 800;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .nav_name {
+    display: inline-block;
+    color: white;
+    font-size: 1.3em;
+    margin: 0;
+  }
+
+  .nav_hamburger_parent {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 22px;
+    width: 32px;
+    margin: 0px 10px;
+  }
+
+  .nav_mobile_button_parent_change {
+    border: 2px solid #323232;
+    background-color: rgba(0,0,0,0.0);
+  }
+  .nav_mobile_button_parent_change .nav_hamburger_parent div {
+    background-color: #323232;
+  }
+
+  .nav_mobile_button_parent_change h2 {
+    color: #323232;
+  }
+
+  .top,
+  .middle,
+  .bottom {
+      display: block;
+      height: 4px;
+      width: 100%;
+      margin: 0px;
+      background-color: white;
+      border-radius: 0px;
+      opacity: 1;
+      transform-origin: center;
+      position: absolute;
+  }
+
+  .top {
+      top: 0px;
+  }
+  .bottom {
+      top: 20px;
+  }
+  .middle {
+      top: 10px;
+  }
+
+  .nav_mobile_button_parent_change_on_scroll {
+    background-color: rgba(0,0,0,0.7);
+  }
+
+/* Mobile Navigation Toggle Button Ende */
+} /* Mobile Navigation Ende */

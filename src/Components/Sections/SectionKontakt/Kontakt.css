@@ -1,0 +1,47 @@
+.google_maps_parent {
+  display: block;
+  position: relative;
+  text-align: left;
+}
+
+.google_maps_child {
+  display: inline-block;
+  position: relative;
+  margin-right: 60px;
+}
+
+.google_maps_child_text {
+  background-image: linear-gradient(to bottom right, #EEF0F8, #FFFFFF);
+padding: 10px 20px;
+}
+
+.google_maps_child iframe {
+  height: 80vw;
+  width: 80vw;
+  max-height: 380px;
+  max-width: 380px;
+  margin: 30px 0px;
+  padding: 20px 20px;
+  background-color: #F8F9FA;
+}
+
+.google_maps_child h2 {
+  text-align: left;
+}
+
+.kontakt a {
+  color: #323232;
+}
+
+.kontakt a:hover {
+  color: #D74444;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .google_maps_child {
+    display: block;
+    margin-right: 0px;
+  }
+
+}
