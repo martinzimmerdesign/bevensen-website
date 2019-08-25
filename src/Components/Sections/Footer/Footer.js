@@ -36,7 +36,7 @@ render(){
         <p class="footer_text">
 Tel.: 0 58 21 - 96 77 93<br />
 Fax: 0 58 21 - 96 77 92<br />
-E-Mail: <a href="#">info@gefaesspraxis-bevensen.de</a>
+E-Mail: <a href="mailto:info@gefaesspraxis-bevensen.de">info@gefaesspraxis-bevensen.de</a>
         </p>
       </div>
     </div>
