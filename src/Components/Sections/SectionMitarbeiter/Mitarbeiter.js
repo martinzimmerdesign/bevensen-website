@@ -26,7 +26,7 @@ export default class Mitarbeiter extends React.Component {
           duration: 800,
           delay: anime.stagger(100, {start: 800})
         });
-    }
+  }
 
 render(){
   return(
