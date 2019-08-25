@@ -108,8 +108,8 @@
   .header_parent {
     position: relative;
     display: block;
-    height: auto;
-    max-height: 100vh;
+    height: 100vh;
+    max-height: 100%;
     overflow: hidden;
     width: 100%;
   }
@@ -121,7 +121,7 @@
   .header_image_parent {
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
-    transition: all 2s ease-in-out;
+    transition: all 0.8s ease-in-out;
   }
 
   @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
