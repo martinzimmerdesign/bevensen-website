@@ -4,6 +4,8 @@
   width: 100%;
   background-color: #EDEFF7;
   z-index: 400;
+  opacity: 1;
+  overflow: hidden;
 }
 
 .navigation_inner_parent {
@@ -46,6 +48,8 @@
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
     background-image: linear-gradient(to bottom right, #EEF0F8, #FFFFFF);
+    z-index: 400;
+    overflow: hidden;
   }
 
   .navigation_inner_parent {

@@ -47,11 +47,13 @@
     height: auto;
     width: 300px;
     margin: 40px auto;
+    overflow: hidden;
   }
 
   .team_image {
     width: 90vw;
     margin: 30px auto;
+    overflow: hidden;
   }
 
 }

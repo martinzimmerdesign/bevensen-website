@@ -30,32 +30,20 @@ export default class Navigation extends React.Component {
 
 	}
 
-	componentDidMount() {
-        anime({
-          targets: ".elements-animate-in_x",
-          translateY: ["60px", "0px"],
-          opacity: [0, 1],
-          easing: "easeOutQuart",
-          duration: 800,
-          delay: anime.stagger(100, {start: 200})
-        });
-
-        anime({
-          targets: ".elements-animate-in_y",
-          translateX: ["-30px", "0px"],
-          opacity: [0, 1],
-          easing: "easeOutQuart",
-          duration: 800,
-          delay: anime.stagger(800, {start: 800})
-        });
-
-    }
-
-
 // Ändert den State so, dass die Navigation bei Mobile false und bei Desktop true ist //
 		componentDidMount() {
 		    window.addEventListener("resize", this.resize.bind(this));
 		    this.resize();
+
+        anime({
+          targets: ".elements-animate-in_w",
+          translateY: ["60px", "0px"],
+          opacity: [0, 1],
+          easing: "easeOutQuart",
+          duration: 800,
+          delay: 250,
+        });
+
 		}
 
 		resize() {
@@ -191,7 +179,7 @@ render(){
 	};
 
   return(
-		<div class="elements-animate-in_x">
+		<div>
 
 		<div class="desktop_header">
 <Header />
@@ -206,7 +194,7 @@ render(){
 				</div>
 		</div>
 
-    <nav class="navigation_parent elements-animate-in_y" style={{ display: this.state.isMenuClicked ? "block" : "none" }}>
+    <nav class="navigation_parent elements-animate-in_w" style={{ display: this.state.isMenuClicked ? "block" : "none" }}>
 			<ul class="navigation_inner_parent">
     	<li><NavLink exact={true} activeStyle={navStyle} to="/" >Startseite</NavLink></li>
 			<li><NavLink activeStyle={navStyle} to="/mitarbeiter">Mitarbeiter</NavLink></li>
