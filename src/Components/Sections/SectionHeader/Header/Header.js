@@ -26,7 +26,7 @@ export default class HeaderSection extends React.Component {
         });
         anime({
           targets: ".elements-animate-in_c",
-          translateY: ["60px", "0px"],
+          translateY: ["120px", "0px"],
           opacity: [0, 1],
           easing: "easeOutQuart",
           duration: 800,

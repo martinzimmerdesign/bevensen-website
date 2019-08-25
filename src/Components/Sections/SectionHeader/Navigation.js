@@ -32,7 +32,7 @@ export default class Navigation extends React.Component {
 
 // Ändert den State so, dass die Navigation bei Mobile false und bei Desktop true ist //
 		componentDidMount() {
-		    window.addEventListener("resize", this.resize.bind(this));
+      window.addEventListener("resize", this.resize.bind(this));
 		    this.resize();
 
         anime({
@@ -185,14 +185,16 @@ render(){
 <Header />
 		</div>
 
-		<div className={ this.state.isMenuClicked ? "nav_mobile_button_parent nav_mobile_button_parent_change" : "nav_mobile_button_parent" } onClick={this.handleClick}>
-				<h2 class="nav_name">MENÜ</h2>
-				<div class="nav_hamburger_parent">
-						<div class="top"></div>
-						<div class="middle"></div>
-						<div class="bottom"></div>
-				</div>
-		</div>
+
+  <div className={ this.state.isMenuClicked ? "nav_mobile_button_parent nav_mobile_button_parent_change" : "nav_mobile_button_parent" } onClick={this.handleClick}>
+      <h2 class="nav_name">MENÜ</h2>
+      <div class="nav_hamburger_parent">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+    </div>
+</div>
+
 
     <nav class="navigation_parent elements-animate-in_w" style={{ display: this.state.isMenuClicked ? "block" : "none" }}>
 			<ul class="navigation_inner_parent">
