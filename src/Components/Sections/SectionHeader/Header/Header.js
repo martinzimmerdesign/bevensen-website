@@ -4,11 +4,6 @@ import headerImg from './img/header8.png';
 import anime from 'animejs/lib/anime.es.js';
 import { NavLink } from "react-router-dom";
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh_header = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh_header', `${vh}px`);
-
 export default class HeaderSection extends React.Component {
 
   componentDidMount() {
