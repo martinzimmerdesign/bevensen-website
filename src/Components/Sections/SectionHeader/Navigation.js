@@ -24,6 +24,7 @@ export default class Navigation extends React.Component {
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
+    this.handlePageClickTransition = this.handlePageClickTransition.bind(this);
     this.state = {
       isMenuClicked: true
     };
@@ -51,9 +52,7 @@ export default class Navigation extends React.Component {
 		}
 // Ende //
 
-
 	handleClick() {
-
 
 	      if (this.state.isMenuClicked === false) {
 	    anime({
@@ -94,7 +93,7 @@ export default class Navigation extends React.Component {
 	    anime({
 	        targets: '.bottom',
 	        top: {
-	            value: ['20px', '10px'],
+	            value: ['18px', '10px'],
 	            duration: 600,
 	            easing: 'easeOutQuart'
 	        },
@@ -118,6 +117,15 @@ export default class Navigation extends React.Component {
 	    }
 	    else {
 
+        anime({
+  	        targets: '.navigation_parent',
+  	        translateX: ['0', '100%'],
+  	        loop: false,
+  	        duration: 400,
+  	        delay: 0,
+  	        easing: "easeOutQuart",
+  	    })
+
 	        anime({
 	            targets: '.top',
 	            top: {
@@ -137,7 +145,7 @@ export default class Navigation extends React.Component {
 	        anime({
 	            targets: '.bottom',
 	            top: {
-	                value: ['10px', '20px'],
+	                value: ['10px', '18px'],
 	                duration: 600,
 	                delay: 800,
 	                easing: 'easeOutQuint'
@@ -160,7 +168,15 @@ export default class Navigation extends React.Component {
 
 	    }
 
-	this.setState(this.toggleClickState);
+if (this.state.isMenuClicked === true) {
+      setTimeout(() => {
+        this.setState(this.toggleClickState);
+      }, 400);
+} else {
+  this.setState(this.toggleClickState);
+}
+
+
 	  }
 
 	  toggleClickState(state) {
@@ -169,7 +185,9 @@ export default class Navigation extends React.Component {
 	    };
 	  }
 
-
+    handlePageClickTransition() {
+          this.handleClick();
+    }
 
 render(){
 
@@ -197,7 +215,7 @@ render(){
 
 
     <nav class="navigation_parent elements-animate-in_w" style={{ display: this.state.isMenuClicked ? "block" : "none" }}>
-			<ul class="navigation_inner_parent">
+			<ul class="navigation_inner_parent" onClick={this.handlePageClickTransition}>
     	<li><NavLink exact={true} activeStyle={navStyle} to="/" >Startseite</NavLink></li>
 			<li><NavLink activeStyle={navStyle} to="/mitarbeiter">Mitarbeiter</NavLink></li>
 			<li><NavLink activeStyle={navStyle} to="/ausbildung">Ausbildung</NavLink></li>

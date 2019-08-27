@@ -62,7 +62,7 @@
   .footer_line {
     display: block;
     background-color: #323232;
-    width: 80%;
+    width: calc(100% - 40px);
     height: 1px;
     margin: 2px auto;
   }
