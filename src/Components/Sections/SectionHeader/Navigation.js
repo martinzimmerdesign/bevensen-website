@@ -186,7 +186,9 @@ if (this.state.isMenuClicked === true) {
 	  }
 
     handlePageClickTransition() {
+if (window.innerWidth < 920) {
           this.handleClick();
+        }
     }
 
 render(){
