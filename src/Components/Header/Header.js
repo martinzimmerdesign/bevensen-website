@@ -43,8 +43,8 @@ const Header = () =>
       <motion.div variants={variants.children} className="header_logo">
         <NavLink to="/">
           <picture>
-            <source srcset={logoWebp} type="image/webp" />
-            <source srcset={logo} type="image/png" />
+            <source srcSet={logoWebp} type="image/webp" />
+            <source srcSet={logo} type="image/png" />
             <img src={logo} alt="Praxis Logo" />
           </picture>
       </NavLink>
@@ -56,8 +56,8 @@ const Header = () =>
       </motion.div>
       <motion.div variants={variants.children} className="telefon_container">
         <picture>
-          <source srcset={telefonWebp} type="image/webp" />
-          <source srcset={telefon} type="image/png" />
+          <source srcSet={telefonWebp} type="image/webp" />
+          <source srcSet={telefon} type="image/png" />
           <img src={telefon} alt="Telefon Icon" />
         </picture>
         <p>0 58 21 - 96 77 93</p>

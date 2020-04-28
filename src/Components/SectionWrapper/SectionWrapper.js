@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import './SectionWrapper.css';
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import ScrollToTopOnMount from 'Components/ScrollToTopOnMount.js';
 
 function SectionWrapper (props) {
 
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     /* Optional options */
     threshold: 0.01,
     triggerOnce: true,

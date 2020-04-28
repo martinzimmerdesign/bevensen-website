@@ -5,7 +5,7 @@ const Leistungen = () =>
       <div>
         <SectionWrapper title="Leistungen" subtitle="Hier finden Sie eine kurze Auflistung unsere Leistungen.">
         <div>
-            <ul class="list">
+            <ul className="list">
             <li>Farbduplexsonographie</li>
             <li>Systolischer Knöcheldruck</li>
             <li>Oszillographie</li>

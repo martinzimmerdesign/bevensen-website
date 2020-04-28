@@ -39,27 +39,27 @@ const Leistungen = () =>
           <motion.div variants={variants.parent} className="aerzte_image_parent">
             <motion.div variants={variants.children} className="arzt_image_wrapper">
               <motion.picture>
-                <source srcset={imgGrahlWebp} type="image/webp" />
-                <source srcset={imgGrahl} type="image/png" />
-                <img src={imgGrahl} className="arzt_image" alt="Grahl Image" />
+                <source srcSet={imgGrahlWebp} type="image/webp" />
+                <source srcSet={imgGrahl} type="image/png" />
+                <img src={imgGrahl} className="arzt_image" alt="Grahl" />
               </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Katja Grahl</motion.h3>
                 <motion.h4 variants={variants.children}>Fachärztin Innere Medizin-Angiologie</motion.h4>
             </motion.div>
             <motion.div variants={variants.children} className="arzt_image_wrapper">
               <motion.picture variants={variants.children}>
-                <source srcset={imgBraunWebp} type="image/webp" />
-                <source srcset={imgBraun} type="image/png" />
-                <img className="arzt_image" alt="Braun Image" src={imgBraun} />
+                <source srcSet={imgBraunWebp} type="image/webp" />
+                <source srcSet={imgBraun} type="image/png" />
+                <img className="arzt_image" alt="Braun" src={imgBraun} />
               </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Stephan Braun</motion.h3>
                 <motion.h4 variants={variants.children}>Facharzt Chirurgie-Gefäßchirurgie</motion.h4>
             </motion.div>
             <motion.div variants={variants.children} className="arzt_image_wrapper">
               <motion.picture variants={variants.children}>
-                <source srcset={imgPflugradtWebp} type="image/webp" />
-                <source srcset={imgPflugradt} type="image/png" />
-                <img className="arzt_image" alt="Pflugradt Image" src={imgPflugradt} />
+                <source srcSet={imgPflugradtWebp} type="image/webp" />
+                <source srcSet={imgPflugradt} type="image/png" />
+                <img className="arzt_image" alt="Pflugradt" src={imgPflugradt} />
               </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Axel Pflugradt</motion.h3>
                 <motion.h4 variants={variants.children}>Facharzt Chirurgie-Gefäßchirurgie</motion.h4>
@@ -68,9 +68,9 @@ const Leistungen = () =>
         <motion.h2 variants={variants.title} transition={{delay: 0.6}}>Unser Team</motion.h2>
         <motion.div variants={variants.title} transition={{delay: 0.8}} className="team_image_parent">
           <motion.picture variants={variants.children}>
-            <source srcset={imgTeamWebp} type="image/webp" />
-            <source srcset={imgTeam} type="image/png" />
-            <img className="team_image" alt="Team Image" src={imgTeam} />
+            <source srcSet={imgTeamWebp} type="image/webp" />
+            <source srcSet={imgTeam} type="image/png" />
+            <img className="team_image" alt="Team" src={imgTeam} />
           </motion.picture>
         </motion.div>
       </motion.div>

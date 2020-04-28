@@ -119,7 +119,7 @@ export default function Navigation() {
     if(width > 1280) {
       setOpen(true);
     }
-  });
+  }, [width]);
 
   return (
     <motion.div

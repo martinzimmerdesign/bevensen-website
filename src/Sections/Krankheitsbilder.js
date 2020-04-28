@@ -5,7 +5,7 @@ const Krankheitsbilder = () =>
       <div>
         <SectionWrapper title="Krankheitsbilder">
         <div>
-            <ul class="list">
+            <ul className="list">
                 <li>Durchblutungsstörungen der hirnversorgenden Gefäße</li>
                 <li>Durchblutungsstörungen der Arm- und Beinschlagadern</li>
                 <li>Periphere arterielle Verschlußkrankheit - akuter Arterienverschluß</li>
