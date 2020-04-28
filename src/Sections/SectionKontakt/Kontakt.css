@@ -49,14 +49,20 @@
   align-items: flex-end;
 }
 
-.bevensen {
+.no-webp .bevensen {
   background-image: url("./img/bevensen.png");
-  /* background-image: url("./img/bevensen.webp"); */
 }
 
-.dannenberg {
+.webp .bevensen{
+  background-image: url("./img/bevensen.webp");
+}
+
+.no-webp .dannenberg {
   background-image: url("./img/dannenberg.png");
-  /* background-image: url("./img/dannenberg.webp"); */
+}
+
+.webp .dannenberg{
+  background-image: url("./img/dannenberg.webp");
 }
 
 .location_image p {
