@@ -1,0 +1,113 @@
+.kontakt {
+  margin-bottom: 100px;
+}
+
+.kontakt h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.kontakt h2 span {
+  font-weight: bold;
+}
+
+.location_container {
+  background-image: var(--grad);
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 140px);
+  max-width: 1360px;
+  margin: 60px auto;
+  justify-content: center;
+}
+
+.location_text_container {
+  margin-right: 50px;
+  width: 350px;
+}
+
+.location_text_container h3 {
+  color: var(--color-dark-blue);
+  text-transform: uppercase;
+}
+
+.location_text_container p {
+  color: var(--color-text);
+}
+
+.location_image {
+  display: flex;
+  height: 300px;
+  width: 700px;
+  background-position: center;
+  box-shadow: 8px 8px 0px rgba(189, 204, 226, 0.4);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bevensen {
+  background-image: url("./img/bevensen.png");
+}
+
+.dannenberg {
+  background-image: url("./img/dannenberg.png");
+}
+
+.location_image p {
+  margin: 15px;
+  background-color: white;
+  padding: 10px 20px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 4px 4px 0px rgba(189, 204, 226, 0.4);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.location_image p:hover {
+  box-shadow: 4px 4px 0px rgba(189, 204, 226, 0.8);
+}
+
+
+/* Tablet Start */
+@media only screen and (max-width: 1400px) {
+
+  .location_image {
+    width: 40vw;
+  }
+
+  .kontakt h2 {
+    margin-top: 50px;
+  }
+
+}
+
+/* Mobile Start */
+@media only screen and (max-width: 960px) {
+
+  .location_container {
+    flex-direction: column;
+    width: calc(100% - 80px);
+    padding: 40px;
+    margin: 40px auto;
+  }
+
+  .location_image {
+    width: 65vw;
+  }
+
+  .location_text_container {
+    width: 65vw;
+    margin: 0;
+  }
+
+  .location_text_container h3 {
+    margin: 0;
+  }
+
+}

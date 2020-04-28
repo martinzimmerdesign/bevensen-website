@@ -1,0 +1,72 @@
+.mitarbeiter {
+  margin: 100px 0px;
+  overflow: hidden;
+}
+
+.mitarbeiter h2 {
+  border-bottom: 2px solid var(--color-light-blue);
+  width: fit-content;
+}
+
+.arzt_image_wrapper {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  margin: 20px 0px;
+}
+
+.arzt_image_wrapper h3 {
+  font-weight: bold;
+  line-height: 1.6;
+  color: var(--color-dark-blue);
+  margin: 0;
+  text-align: center;
+}
+
+.arzt_image_wrapper h4 {
+  font-weight: normal;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+  text-align: center;
+}
+
+.arzt_image {
+  display: block;
+  position: relative;
+  border: 1px solid #DDDDDD;
+  border-radius: 100%;
+  margin: 20px auto;
+  padding: 4px;
+}
+
+.team_image {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.aerzte_image_parent, .team_image_parent {
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .arzt_image_wrapper {
+    display: block;
+    height: auto;
+    width: 300px;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+
+  .team_image {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+
+}

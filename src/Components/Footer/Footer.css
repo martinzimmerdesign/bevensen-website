@@ -1,0 +1,30 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0px;
+	background-color: var(--color-footer);
+	height: auto;
+	width: 100%;
+}
+
+.footer_text {
+	text-align: center;
+	width: fit-content;
+	line-height: 1.6;
+	color: var(--color-dark-blue);
+}
+
+.footer_text a {
+	text-decoration: none;
+	color: var(--color-dark-blue);
+	border-bottom: 2px solid var(--color-footer);
+}
+
+.footer_text a:hover {
+	border-bottom: 2px solid var(--color-light-blue);
+}
+
+.footer_text span {
+	font-weight: bold;
+}
