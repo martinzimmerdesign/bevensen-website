@@ -9,10 +9,13 @@
 }
 
 .arzt_image_wrapper {
-  display: inline-block;
+  display: flex;
   height: 400px;
   width: 400px;
   margin: 20px 0px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .arzt_image_wrapper h3 {
@@ -38,6 +41,8 @@
   border-radius: 100%;
   margin: 20px auto;
   padding: 4px;
+  width: 95%;
+  height: auto;
 }
 
 .team_image {
@@ -56,9 +61,8 @@
 @media only screen and (max-width: 720px) {
 
   .arzt_image_wrapper {
-    display: block;
     height: auto;
-    width: 300px;
+    width: 100%;
     margin: 40px auto;
     overflow: hidden;
   }
