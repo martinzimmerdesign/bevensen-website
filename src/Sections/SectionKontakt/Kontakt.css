@@ -51,12 +51,12 @@
 
 .bevensen {
   background-image: url("./img/bevensen.png");
-  background-image: url("./img/bevensen.webp");
+  /* background-image: url("./img/bevensen.webp"); */
 }
 
 .dannenberg {
   background-image: url("./img/dannenberg.png");
-  background-image: url("./img/dannenberg.webp");
+  /* background-image: url("./img/dannenberg.webp"); */
 }
 
 .location_image p {
