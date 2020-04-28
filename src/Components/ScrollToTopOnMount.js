@@ -14,7 +14,7 @@ const height = useCurrentHeight();
         window.scrollTo(0, height);
       }
 
-  });
+  }, []);
   return null;
 }
 export default ScrollToTopOnMount;
