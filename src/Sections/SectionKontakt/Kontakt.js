@@ -46,8 +46,8 @@ const Kontakt = () =>
               <h3>Praxis Dannenberg</h3>
               <p>Hermann –Löns Str. 2 | 29451 Dannenberg<br />(in der CAPIO Elbe-Jeetzel Klinik)<br /><br /><span>Telefon:</span> 0 58 61 - 83 89 00<br /><span>Fax:</span> 0 58 61 - 83 89 99<br /><br /><span>Öffnungszeiten:</span><br />Montag - Donnerstag: 8:30 Uhr - 17:00 Uhr<br />Freitag: geschlossen</p>
             </motion.div>
-            <motion.a variants={variants.children} href="https://www.google.com/maps?ll=53.085583,10.603598&z=17&t=m&hl=en&gl=US&mapclient=embed&q=R%C3%B6mstedter+Str.+25+29549+Bad+Bevensen"><div className="location_image dannenberg">
-              <p><a href="https://www.google.com/maps?ll=53.085583,10.603598&z=17&t=m&hl=en&gl=US&mapclient=embed&q=R%C3%B6mstedter+Str.+25+29549+Bad+Bevensen">Zu Google Maps</a></p>
+            <motion.a variants={variants.children} href="https://www.google.com/maps/place/Hermann-L%C3%B6ns-Stra%C3%9Fe+2,+29451+Dannenberg+(Elbe),+Germany/@53.0830901,11.078083,17z/data=!3m1!4b1!4m5!3m4!1s0x47ae4679641547b1:0x3b61640edba429ff!8m2!3d53.0830901!4d11.0802717?hl=en"><div className="location_image dannenberg">
+              <p><a href="https://www.google.com/maps/place/Hermann-L%C3%B6ns-Stra%C3%9Fe+2,+29451+Dannenberg+(Elbe),+Germany/@53.0830901,11.078083,17z/data=!3m1!4b1!4m5!3m4!1s0x47ae4679641547b1:0x3b61640edba429ff!8m2!3d53.0830901!4d11.0802717?hl=en">Zu Google Maps</a></p>
             </div></motion.a>
           </motion.div>
         </motion.div>

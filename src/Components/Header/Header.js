@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import './Header.css';
 import logo from './img/logo.png';
+import logoWebp from './img/logo.webp';
+import telefonWebp from './img/icon_telefon.webp';
 import telefon from './img/icon_telefon.png';
 import { motion } from "framer-motion";
 
@@ -39,7 +41,13 @@ const Header = () =>
     animate="enter"
     exit="exit">
       <motion.div variants={variants.children} className="header_logo">
-        <NavLink to="/"><img src={logo} /></NavLink>
+        <NavLink to="/">
+          <picture>
+            <source srcset={logoWebp} type="image/webp" />
+            <source srcset={logo} type="image/png" />
+            <img src={logo} alt="Praxis Logo" />
+          </picture>
+      </NavLink>
       </motion.div>
       <motion.div variants={variants.children} className="header_text">
         <div className="header_line"></div>
@@ -47,7 +55,11 @@ const Header = () =>
         Dr. med. Katja Grahl & Dr. med. Stephan Braun & Dr. med. Axel Pflugradt</p>
       </motion.div>
       <motion.div variants={variants.children} className="telefon_container">
-        <img src={telefon} />
+        <picture>
+          <source srcset={telefonWebp} type="image/webp" />
+          <source srcset={telefon} type="image/png" />
+          <img src={telefon} alt="Telefon Icon" />
+        </picture>
         <p>0 58 21 - 96 77 93</p>
       </motion.div>
     </motion.div>

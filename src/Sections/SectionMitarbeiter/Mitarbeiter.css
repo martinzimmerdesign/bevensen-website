@@ -8,6 +8,14 @@
   width: fit-content;
 }
 
+.aerzte_image_parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .arzt_image_wrapper {
   display: flex;
   height: 400px;

@@ -4,6 +4,7 @@
   flex-direction: row;
   height: 500px;
   background-image: url("./img/header.jpg");
+  background-image: url("./img/header.webp");
   background-size: cover;
   background-position: center;
 }

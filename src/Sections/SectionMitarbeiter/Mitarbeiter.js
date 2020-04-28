@@ -4,6 +4,10 @@ import imgGrahl from './img/grahl.png';
 import imgBraun from './img/braun.png';
 import imgPflugradt from './img/pflugradt.png';
 import imgTeam from './img/team.png';
+import imgGrahlWebp from './img/grahl.webp';
+import imgBraunWebp from './img/braun.webp';
+import imgPflugradtWebp from './img/pflugradt.webp';
+import imgTeamWebp from './img/team.webp';
 import SectionWrapper from 'Components/SectionWrapper/SectionWrapper.js';
 import { motion } from "framer-motion";
 
@@ -34,24 +38,40 @@ const Leistungen = () =>
           <motion.h2 variants={variants.title}>Unsere Ärzte</motion.h2>
           <motion.div variants={variants.parent} className="aerzte_image_parent">
             <motion.div variants={variants.children} className="arzt_image_wrapper">
-                <motion.img variants={variants.children} className="arzt_image" alt="Grahl Image" src={imgGrahl}></motion.img>
+              <motion.picture>
+                <source srcset={imgGrahlWebp} type="image/webp" />
+                <source srcset={imgGrahl} type="image/png" />
+                <img src={imgGrahl} className="arzt_image" alt="Grahl Image" />
+              </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Katja Grahl</motion.h3>
                 <motion.h4 variants={variants.children}>Fachärztin Innere Medizin-Angiologie</motion.h4>
             </motion.div>
             <motion.div variants={variants.children} className="arzt_image_wrapper">
-                <motion.img variants={variants.children} className="arzt_image" alt="Braun Image" src={imgBraun}></motion.img>
+              <motion.picture variants={variants.children}>
+                <source srcset={imgBraunWebp} type="image/webp" />
+                <source srcset={imgBraun} type="image/png" />
+                <img className="arzt_image" alt="Braun Image" src={imgBraun} />
+              </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Stephan Braun</motion.h3>
                 <motion.h4 variants={variants.children}>Facharzt Chirurgie-Gefäßchirurgie</motion.h4>
             </motion.div>
             <motion.div variants={variants.children} className="arzt_image_wrapper">
-                <motion.img variants={variants.children} className="arzt_image" alt="Pflugradt Image" src={imgPflugradt}></motion.img>
+              <motion.picture variants={variants.children}>
+                <source srcset={imgPflugradtWebp} type="image/webp" />
+                <source srcset={imgPflugradt} type="image/png" />
+                <img className="arzt_image" alt="Pflugradt Image" src={imgPflugradt} />
+              </motion.picture>
                 <motion.h3 variants={variants.children}>Dr. med. Axel Pflugradt</motion.h3>
                 <motion.h4 variants={variants.children}>Facharzt Chirurgie-Gefäßchirurgie</motion.h4>
             </motion.div>
           </motion.div>
         <motion.h2 variants={variants.title} transition={{delay: 0.6}}>Unser Team</motion.h2>
         <motion.div variants={variants.title} transition={{delay: 0.8}} className="team_image_parent">
-          <motion.img className="team_image" alt="Team Image" src={imgTeam}></motion.img>
+          <motion.picture variants={variants.children}>
+            <source srcset={imgTeamWebp} type="image/webp" />
+            <source srcset={imgTeam} type="image/png" />
+            <img className="team_image" alt="Team Image" src={imgTeam} />
+          </motion.picture>
         </motion.div>
       </motion.div>
       </SectionWrapper>
