@@ -19,13 +19,13 @@ export default function Navigation() {
             enter: {
               x: "0vw",
               transition: {
-                duration: 0.5,
+                duration: 0.3,
               }
             },
             exit: {
               x: "100vw",
               transition: {
-                duration: 0.5,
+                duration: 0.3,
               }
             }
           },
@@ -44,6 +44,7 @@ export default function Navigation() {
   const variantsNavDesktop = {
           navigationContainer: {
             enter: {
+              x: 0,
               opacity: 1,
               transition: {
                   ease: "easeOut",
@@ -52,6 +53,7 @@ export default function Navigation() {
               }
             },
             exit: {
+              x: 0,
               opacity: 0,
               transition: {
               }
@@ -118,6 +120,9 @@ export default function Navigation() {
   useEffect(() => {
     if(width > 1280) {
       setOpen(true);
+    }
+    if(width <= 1280) {
+      setOpen(false);
     }
   }, [width]);
 

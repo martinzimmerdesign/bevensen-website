@@ -7,6 +7,10 @@
   --grad: linear-gradient(to bottom right, #EFF5FF , #F2F7FD);
 }
 
+.App {
+  overflow: hidden;
+}
+
 .top_section {
   display: flex;
   flex-direction: column;
