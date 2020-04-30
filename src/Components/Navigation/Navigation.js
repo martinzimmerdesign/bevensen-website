@@ -132,14 +132,14 @@ export default function Navigation() {
       initial="exit"
       animate={isOpen ? "enter" : "exit"}
       exit="exit">
-      <div className="navigation_button" onClick={() => setOpen(!isOpen)}>
-        <p>Menü</p>
+      <motion.div initial={{ x: 200, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 0.3 }} className="navigation_button" onClick={() => setOpen(!isOpen)}>
+        <motion.p>Menü</motion.p>
         <motion.div className="hamburger">
           <motion.div variants={variantsHamburger.hamburgerTop} className="hamburger_element"></motion.div>
           <motion.div variants={variantsHamburger.hamburgerCenter} className="hamburger_element"></motion.div>
           <motion.div variants={variantsHamburger.hamburgerBottom} className="hamburger_element"></motion.div>
         </motion.div>
-      </div>
+      </motion.div>
       <motion.div variants={width > 1280 ? variantsNavDesktop.navigationContainer : variantsNavMobile.navigationContainer} className="navigation_list_wrapper">
   			<motion.ul variants={width > 1280 ? variantsNavDesktop.navigationStagger : variantsNavMobile.navigationStagger} className="navigation_list" onClick={() => setOpen(width < 1280 ? !isOpen : true)}>
   	    	<motion.li variants={width > 1280 ? variantsNavDesktop.navigationElements : variantsNavMobile.navigationElements}><NavLink exact={true} activeStyle={navStyle} to="/" >Startseite</NavLink></motion.li>

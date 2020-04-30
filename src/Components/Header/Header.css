@@ -105,11 +105,14 @@
     height: 100vh;
   }
 
+  .header_logo {
+    pointer-events: none;
+  }
+
   .header_logo img  {
     height: auto;
     width: calc(100% - 40px);
     padding: 0 20px;
-    pointer-events: none;
   }
 
 }
