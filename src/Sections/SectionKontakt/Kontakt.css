@@ -119,3 +119,22 @@
   }
 
 }
+
+/* Mobile Start */
+@media only screen and (max-width: 600px) {
+
+  .location_container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    padding-top: 40px;
+    margin: 40px auto;
+  }
+
+  .location_image {
+    width: 100%;
+    box-shadow: none;
+
+  }
+
+}
