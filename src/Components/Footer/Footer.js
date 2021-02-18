@@ -7,7 +7,7 @@ const Footer = () =>
       <p className="footer_text">
 <NavLink to="/impressum"><span>Impressum</span></NavLink>&nbsp;|&nbsp;
 <NavLink to="/datenschutzerklärung"><span>Datenschutzerklärung</span></NavLink><br />
-Copyright © 2020 Gefäßpraxis Bevensen
+Copyright © 2021 Gefäßpraxis Bevensen
       </p>
     </div>
 export default Footer;
